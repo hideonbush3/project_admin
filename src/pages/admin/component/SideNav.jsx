@@ -31,7 +31,7 @@ export default function SideNav({isActive, setIsActive}) {
       <div className={`sidebar_menuToggle`} onClick={handleClick}>
       </div>
         <ul>
-            <li className={`sidebar_list ${currUrl === '/admin' ? 'sidebar_active' : ''}`}>
+            <li className={`sidebar_list ${(currUrl === '/admin' || currUrl ==="/admin/") ? 'sidebar_active' : ''}`}>
                 <Link to="/admin">
                     <span className={`sidebar_icon`} style={{'--clr': '#f44336'}}>
                         <MdOutlineDashboard />
@@ -39,7 +39,7 @@ export default function SideNav({isActive, setIsActive}) {
                     <span className={`sidebar_text`}>HOME</span>
                 </Link>
             </li>
-            <li className={`sidebar_list ${currUrl === '/admin/myinfo' ? 'sidebar_active' : ''}`}>
+            <li className={`sidebar_list ${(currUrl === '/admin/myinfo' || currUrl === '/admin/myinfo/') ? 'sidebar_active' : ''}`}>
                 <Link to="/admin/myinfo">
                     <span className={`sidebar_icon`} style={{'--clr': '#ffa117'}}>
                         <RiUser5Line />
