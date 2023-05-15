@@ -1,3 +1,8 @@
-body {
+/*body {*/
+/*  background: var(--color-umbak);*/
+/*}*/
+.adminContainer
+{
   background: var(--color-umbak);
+  height: 968px;
 }
