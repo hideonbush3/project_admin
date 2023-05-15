@@ -7,7 +7,7 @@ function Admin() {
     const [sideOpen, setSideOpen] = useState('');
 
   return(
-    <div>
+    <div className="adminContainer">
       <SideNav isActive={sideOpen} setIsActive={setSideOpen}/>
       <Outlet context={sideOpen} />
     </div>
