@@ -2,8 +2,8 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import React from "react";
 import Admin from "./pages/admin/Admin";
 import Index from "./pages/front/Index";
+import MyInfo from "./pages/myinfo/MyInfo";
 import Home from "./pages/admin/pages/Home";
-import MyInfo from "./pages/admin/pages/MyInfo";
 import Join from "./pages/front/pages/Join";
 
 const router = createBrowserRouter([
@@ -21,6 +21,11 @@ const router = createBrowserRouter([
       {index: true, element: <Home />},
       {path: "myinfo", element: <MyInfo />},
     ]
+  },
+  {
+    path:'/myinfo',
+    element:<MyInfo />,
+    children: []
   }
 ]);
 
