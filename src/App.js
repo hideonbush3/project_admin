@@ -2,9 +2,10 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import React from "react";
 import Admin from "./pages/admin/Admin";
 import Index from "./pages/front/Index";
-import MyInfo from "./pages/myinfo/MyInfo";
+import UserInfo from "./pages/myinfo/UserInfo";
 import Home from "./pages/admin/pages/Home";
 import Join from "./pages/front/pages/Join";
+import MyInfo from "./pages/admin/pages/MyInfo";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/myinfo',
-    element:<MyInfo />,
+    element:<UserInfo />,
     children: []
   }
 ]);
