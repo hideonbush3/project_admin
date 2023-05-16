@@ -6,7 +6,10 @@ import Footer_2 from "./component/Footer_2";
 export default function Index() {
   return (
     <>
-      <h1>header자리</h1>
+      <h1 style={{border:"1px solid #3B4CA8",margin:"0", color:"#3B4CA8"}}>엄클래스!</h1>
+        <div style={{border:"1px solid #3B4CA8",height:"70px"}}>
+            여기는 NAV자리, header와 합쳐 120px로 예상.
+        </div>
       <Outlet />
       <Footer_2 />
     </>
