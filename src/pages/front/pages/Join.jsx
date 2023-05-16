@@ -78,7 +78,7 @@ export default function Join () {
                                 <input type="text" style={{width:"100%",height:"40px"}} />
                             </Col>
                         </Row>
-                        <Row className={"mb-4"}>
+                        <Row className={"mb-5"}>
                             <Col className={"col-3 align-self-center"}>
                                 <p style={{margin:"0"}}>구분 <span className={"text-danger"}>*</span></p>
                             </Col>
@@ -86,7 +86,7 @@ export default function Join () {
                                 <input type="text" style={{width:"100%",height:"40px"}} />
                             </Col>
                         </Row>
-                        <Row className={"mb-5"}>
+                        <Row style={{marginBottom:"100px"}}>
                             <Col className={"offset-4 col-4"}>
                                 <Button style={{width:"100%"}}>가입하기</Button>
                             </Col>

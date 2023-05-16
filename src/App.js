@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element:<Admin />,
     children: [
       {index: true, element: <Home />},
-      {path: "myinfo", element: <MyInfo />},
+      {path: "myinfo", element: <MyInfo />}
     ]
   },
   {
