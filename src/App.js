@@ -6,6 +6,7 @@ import UserInfo from "./pages/myinfo/UserInfo";
 import Home from "./pages/admin/pages/Home";
 import Join from "./pages/front/pages/Join";
 import MyInfo from "./pages/admin/pages/MyInfo";
+import Modify from "./pages/myinfo/pages/Modify";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,9 @@ const router = createBrowserRouter([
   {
     path:'/myinfo',
     element:<UserInfo />,
-    children: []
+    children: [
+      {path: "modify", element: <Modify />}
+    ]
   }
 ]);
 
