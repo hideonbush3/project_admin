@@ -1,13 +1,14 @@
-
-
 .carousel-control-next
 {
-    background-color: black;
-    right: 18.7%;
+    width:50%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon
+{
+    display: none;
 }
 .carousel-control-prev
 {
-    background-color: black;
-    left: 18.7%;
+    width:50%;
 }
 
