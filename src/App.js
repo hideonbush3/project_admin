@@ -6,6 +6,7 @@ import UserInfo from "./pages/myinfo/UserInfo";
 import Home from "./pages/admin/pages/Home";
 import Join from "./pages/front/pages/Join";
 import MyInfo from "./pages/admin/pages/MyInfo";
+import Login from "./pages/front/pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,13 @@ const router = createBrowserRouter([
     element:<Index />,
     children: [
       {path: "join", element: <Join />}
+    ]
+  },
+  {
+    path:'/',
+    element:<Index />,
+    children: [
+      {path: "login", element: <Login />}
     ]
   },
   {

@@ -1,0 +1,31 @@
+.LoginContainer
+{
+    max-width: 600px;
+    min-width: 500px;
+}
+
+.LoginContainer{
+    border: 1px solid #6c757d;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.loginMain{
+    margin: 100px 0 100px 0;
+}
+
+.loginbtn
+{
+    text-align: center;
+    width: 100%;
+}
+
+.kakaoLogin {
+    height: 50px;
+    cursor: pointer;
+}
+
+.kakaoImg{
+    width: 100%;
+    height: 100%;
+}
