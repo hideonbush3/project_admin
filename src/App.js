@@ -8,12 +8,14 @@ import Join from "./pages/front/pages/Join";
 import MyInfo from "./pages/admin/pages/MyInfo";
 import Login from "./pages/front/pages/Login";
 import Modify from "./pages/myinfo/pages/Modify";
+import ClassMain from "./pages/front/pages/ClassMain";
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<Index />,
     children: [
+      {path:"main", element: <ClassMain />},
       {path: "login", element: <Login />},
       {path: "join", element: <Join />}
     ]
