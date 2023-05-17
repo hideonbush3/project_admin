@@ -12,21 +12,13 @@ export default function Join () {
                     <div id="joinForm" className="ps-3 border-top border-2 border-dark">
                         <Row className={"mb-4 mt-3"}>
                             <Col className={"col-3 align-self-center"}>
-                                <p style={{margin:"0"}}>이메일 <span className={"text-danger"}>*</span></p>
+                                <label for="email"><p style={{margin:"0"}}>이메일 <span className={"text-danger"}>*</span></p></label>
                             </Col>
                             <Col className={"col-6"}>
-                                <input type="text" style={{width:"100%",height:"40px"}} />
+                                <input type="text" id="email" style={{width:"100%",height:"40px"}} />
                             </Col>
                             <Col className={"col-3"}>
                                <button className="joinButton">중복확인</button>
-                            </Col>
-                        </Row>
-                        <Row className={"mb-4"}>
-                            <Col className={"col-3 align-self-center"}>
-                                <p style={{margin:"0"}}>닉네임 <span className={"text-danger"}>*</span></p>
-                            </Col>
-                            <Col className={"col-6"}>
-                                <input type="text" style={{width:"100%",height:"40px"}} />
                             </Col>
                         </Row>
                         <Row className={"mb-4"}>
@@ -47,6 +39,26 @@ export default function Join () {
                         </Row>
                         <Row className={"mb-4"}>
                             <Col className={"col-3 align-self-center"}>
+                                <p style={{margin:"0"}}>구분 <span className={"text-danger"}>*</span></p>
+                            </Col>
+                            <Col className={"col-6"}>
+                                <div className="registerTypeInputContainer d-flex justify-content-between px-2">
+                                    <label><input type="radio" name='userType' value="user" checked={true} /><span>&nbsp;&nbsp; 유저</span></label>
+                                    <label><input type="radio" name='userType' value="tutor" /><span>&nbsp;&nbsp; 유저 + 강사</span></label>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className={"mb-4"}>
+                            <Col className={"col-3 align-self-center"}>
+                                <p style={{margin:"0"}}>닉네임 <span className={"text-danger"}>*</span></p>
+                            </Col>
+                            <Col className={"col-6"}>
+                                <input type="text" style={{width:"100%",height:"40px"}} />
+                            </Col>
+
+                        </Row>
+                        <Row className={"mb-4"}>
+                            <Col className={"col-3 align-self-center"}>
                                 <p style={{margin:"0"}}>이름 <span className={"text-danger"}>*</span></p>
                             </Col>
                             <Col className={"col-6"}>
@@ -61,20 +73,17 @@ export default function Join () {
                                 <input type="text" style={{width:"100%",height:"40px"}} />
                             </Col>
                         </Row>
-                        <Row className={"mb-4"}>
-                            <Col className={"col-3 align-self-center"}>
-                                <p style={{margin:"0"}}>구분 <span className={"text-danger"}>*</span></p>
-                            </Col>
-                            <Col className={"col-6"}>
-                                <input type="text" style={{width:"100%",height:"40px"}} />
-                            </Col>
-                        </Row>
+
                         <Row className={"mb-4"}>
                             <Col className={"col-3 align-self-center"}>
                                 <p style={{margin:"0"}}>성별 <span className={"text-danger"}>*</span></p>
                             </Col>
                             <Col className={"col-6"}>
-                                <input type="text" style={{width:"100%",height:"40px"}} />
+                                <div className="registerGenderInputContainer d-flex justify-content-between px-2">
+                                    <label><input type="radio" name='gender' value="male" /><span>&nbsp;&nbsp; 남</span></label>
+                                    <label><input type="radio" name='gender' value="female" /><span>&nbsp;&nbsp; 여</span></label>
+                                    <label><input type="radio" name='gender' value="none" /><span>&nbsp;&nbsp; 선택안함</span></label>
+                                </div>
                             </Col>
                         </Row>
                         <Row className={"mb-5"}>
