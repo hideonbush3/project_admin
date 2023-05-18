@@ -11,4 +11,38 @@
 {
     width:50%;
 }
+.carousel-indicators button
+{
+    padding: 15px;
+}
 
+.carousel-indicators .active
+{
+    background-color: var(--color-brand);
+}
+
+.mainNavContainer ul
+{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.mainNavContainer ul li
+{
+    border: 1px solid red;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.mainNavContainer ul li:hover
+{
+    background-color: var(--color-umbak);
+    transform: translateY(-6px);
+    transition:0.2s
+}
+
+.mainNavContainer ul li p
+{
+    margin-bottom: 0;
+}
