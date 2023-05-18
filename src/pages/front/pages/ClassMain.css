@@ -11,9 +11,10 @@
 {
     width:50%;
 }
-.carousel-indicators button
+.carousel-indicators
 {
-    padding: 15px;
+    width:960px;
+    left:167px;
 }
 
 .carousel-indicators .active

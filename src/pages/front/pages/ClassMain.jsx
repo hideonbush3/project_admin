@@ -51,17 +51,17 @@ export default function ClassMain() {
             </Carousel>
 
             <Row>
-                <Col className="offset-xxl-3 col-xxl-6">
-                    <div className="mainNavContainer mb-4">
-                        <ul className={"d-flex justify-content-between text-center"}>
-                            <li className="px-3 pb-1 pt-2"><img src={all} alt="all" /><p>전체</p></li>
-                            <li className="px-3 pb-1 pt-2"><img src={fitness} alt="fitness" /><p>피트니스</p></li>
-                            <li className="px-3 pb-1 pt-2"><img src={cook} alt="cook" /><p>요리</p></li>
-                            <li className="px-3 pb-1 pt-2"><img src={craft} alt="craft" /><p>공예</p></li>
-                            <li className="px-3 pb-1 pt-2"><img src={music} alt="music" /><p>음악</p></li>
-                            <li className="px-3 pb-1 pt-2"><img src={art} alt="art" /><p>미술</p></li>
-                            <li className="px-3 pb-1 pt-2"><img src={activity} alt="activity" /><p>액티비티</p></li>
-                            <li className="px-3 pb-1 pt-2"><img src={others} alt="others" /><p>기타</p></li>
+                <Col className="offset-xl-3 col-xl-6">
+                    <div className="mainNavContainer">
+                        <ul className={"d-flex justify-content-between text-center flex-wrap"}>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={all} alt="all" /><p>전체</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={fitness} alt="fitness" /><p>피트니스</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={cook} alt="cook" /><p>요리</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={craft} alt="craft" /><p>공예</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={music} alt="music" /><p>음악</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={art} alt="art" /><p>미술</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={activity} alt="activity" /><p>액티비티</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4"><img src={others} alt="others" /><p>기타</p></li>
                         </ul>
                     </div>
                 </Col>
