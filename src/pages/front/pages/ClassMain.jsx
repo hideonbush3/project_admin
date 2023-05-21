@@ -13,6 +13,8 @@ import bannerLemon1 from "../img/banner/webBanner02.png"
 import pupucook from "../img/banner/webBanner03.png"
 import {Carousel, Col, Row} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
+import {HiLocationMarker} from "react-icons/hi";
+import {VscFilterFilled} from "react-icons/vsc";
 
 
 
@@ -58,23 +60,25 @@ export default function ClassMain() {
             <Row>
                 <Col className="offset-xl-3 col-xl-6">
                     <div className="mainNavContainer">
-                        <ul className={"d-flex justify-content-between text-center flex-wrap"}>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#fd7e14"}}><img src={all} alt="all" /><p>전체</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#6c757d"}}><img src={fitness} alt="fitness" /><p>피트니스</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#faad14"}}><img src={cook} alt="cook" /><p>요리</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#e83e8c"}}><img src={craft} alt="craft" /><p>공예</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={music} alt="music" /><p>음악</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={art} alt="art" /><p>미술</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={activity} alt="activity" /><p>액티비티</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={others} alt="others" /><p>기타</p></li>
+                        <ul className={"d-flex justify-content-between text-center flex-wrap list-unstyled mb-5"}>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#fd7e14"}}><img src={all} alt="all" /><p className={"mt-1"}>전체</p></li>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#6c757d"}}><img src={fitness} alt="fitness" /><p className={"mt-1"}>피트니스</p></li>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#faad14"}}><img src={cook} alt="cook" /><p className={"mt-1"}>요리</p></li>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#e83e8c"}}><img src={craft} alt="craft" /><p className={"mt-1"}>공예</p></li>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#6f42c1"}}><img src={music} alt="music" /><p className={"mt-1"}>음악</p></li>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#52c41a"}}><img src={art} alt="art" /><p className={"mt-1"}>미술</p></li>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#e83e8c"}}><img src={activity} alt="activity" /><p className={"mt-1"}>액티비티</p></li>
+                            <li className="px-3 pb-1 pt-2" style={{"--clr":"#3B4CA8"}}><img src={others} alt="others" /><p className={"mt-1"}>기타</p></li>
                         </ul>
                     </div>
                 </Col>
             </Row>
 
             <Row>
-                <Col className="offset-xl-3 col-xl-6">
-                    <p className="m-0">필터자리1</p>
+                <Col className="offset-xl-3 col-xl-6  mb-2" style={{cursor:"pointer"}}>
+                    <span className="border border-1 border-dark rounded-pill px-3 py-1 border-opacity-25" style={{fontSize:"16px"}}>
+                       <VscFilterFilled className="mb-1" /> 필터
+                    </span>
                 </Col>
             </Row>
 
@@ -84,13 +88,15 @@ export default function ClassMain() {
                     <Col className="offset-xl-3 col-xl-6 mb-5">
                         <Row>
                             <Col className="col-4 mt-4">
-                                <Card style={{ width: '18rem' }}>
+                                <Card border="light" style={{ width: '18rem' }}>
                                     <Card.Img variant="top" src="https://s3.ap-northeast-2.amazonaws.com/umclassuploadboardimg/3d6446b750d54cff8e2f8eba1c946358.jpg" width="100%" height="218px" />
                                     <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
+                                        <div className="d-flex py-1">
+                                            <div><HiLocationMarker className="fs-5 fw-light" /> <span style={{fontSize:"12px"}}>구로구 / 서울</span></div>
+                                        </div>
+                                        <Card.Title className="fs-6 pb-2">[구로구] 취미성인발레 프라이빗 1:1 개인레슨</Card.Title>
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.
+                                            <p className="fw-bold text-end"><span className="text-danger">30% </span>30,000원</p>
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
