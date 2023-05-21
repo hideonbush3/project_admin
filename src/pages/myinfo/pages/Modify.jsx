@@ -8,7 +8,7 @@ export default function Modify() {
         <div className="modifyMain mt-5">
             <Row>
                 <Col className={"offset-xl-4 col-xl-4 modifyContainer"}>
-                    <h3 className={"text-start ps-4 registerHeader"} style={{marginBottom:"46px"}}>개인 정보 수정</h3>
+                    <h3 className={"text-start ps-4 registerHeader"} style={{marginBottom:"32px"}}>개인 정보 수정</h3>
                     <div id="modifyForm" className="ps-3 border-top border-2 border-dark">
                         <Row className={"mb-4 mt-3"}>
                             <Col className={"col-3 align-self-center"}>
