@@ -56,14 +56,14 @@ export default function ClassMain() {
                 <Col className="offset-xl-3 col-xl-6">
                     <div className="mainNavContainer">
                         <ul className={"d-flex justify-content-between text-center flex-wrap"}>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={all} alt="all" /><p>전체</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={fitness} alt="fitness" /><p>피트니스</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={cook} alt="cook" /><p>요리</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={craft} alt="craft" /><p>공예</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={music} alt="music" /><p>음악</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={art} alt="art" /><p>미술</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={activity} alt="activity" /><p>액티비티</p></li>
-                            <li className="px-3 pb-1 pt-2 mb-4"><img src={others} alt="others" /><p>기타</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#fd7e14"}}><img src={all} alt="all" /><p>전체</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#6c757d"}}><img src={fitness} alt="fitness" /><p>피트니스</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#faad14"}}><img src={cook} alt="cook" /><p>요리</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#e83e8c"}}><img src={craft} alt="craft" /><p>공예</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={music} alt="music" /><p>음악</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={art} alt="art" /><p>미술</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={activity} alt="activity" /><p>액티비티</p></li>
+                            <li className="px-3 pb-1 pt-2 mb-4" style={{"--clr":"#3B4CA8"}}><img src={others} alt="others" /><p>기타</p></li>
                         </ul>
                     </div>
                 </Col>
