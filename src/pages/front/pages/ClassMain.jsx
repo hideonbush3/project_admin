@@ -8,6 +8,9 @@ import music from "../img/nav/002-live-music.png";
 import art from "../img/nav/003-art.png";
 import activity from "../img/nav/019-flyboard.png";
 import others from "../img/nav/007-more.png";
+import bannerSale1 from "../img/banner/webBanner01.png"
+import bannerLemon1 from "../img/banner/webBanner02.png"
+import pupucook from "../img/banner/webBanner03.png"
 import {Carousel, Col, Row} from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 
@@ -21,7 +24,7 @@ export default function ClassMain() {
                     <div className="d-flex justify-content-center">
                         <img
                             className="d-block rounded"
-                            src="https://images.unsplash.com/photo-1676028793913-d1b089954d10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1495&q=80"
+                            src={bannerSale1}
                             alt="First slide"
                             width="912"
                             height="380"
@@ -32,7 +35,7 @@ export default function ClassMain() {
                     <div className="d-flex justify-content-center">
                         <img
                             className="d-block rounded"
-                            src="https://images.unsplash.com/photo-1661956601349-f61c959a8fd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                            src={bannerLemon1}
                             alt="Second slide"
                             width="912"
                             height="380"
@@ -43,7 +46,7 @@ export default function ClassMain() {
                     <div className="d-flex justify-content-center">
                         <img
                             className="d-block rounded"
-                            src="https://images.unsplash.com/photo-1684166220037-d94a15745f9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            src={pupucook}
                             alt="Third slide"
                             width="912"
                             height="380"
