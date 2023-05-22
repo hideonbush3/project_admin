@@ -1,22 +1,24 @@
 import React from 'react';
-import {Button, Col, Form, Row, NavLink, Image} from "react-bootstrap";
+import {Button, Col, Form, Row, NavLink, Image, Container} from "react-bootstrap";
 import "./Login.css"
 import kakao  from '../../../assets/kakaologin.png';
+import {Link} from "react-router-dom";
 
 
 export default function Login () {
     return (
-        <div className="container text-center">
+        <Container className={"text-center"}>
           <div className="loginMain">
             <Row>
-                <Col className={"offset-xl-4 col-xl-4 pt-4 LoginContainer"}>
-                    <h2 className={"text-center mb-xl-5 loginLogo"}>양조장</h2>
+                <Col className={"offset-4 col-4 pt-4 loginContainer"}>
+
+                    <h2 className={"text-center mb-xl-5 loginLogo"}>앙클래스</h2>
                     <div id="joinForm" className="ps-3">
                         <Row className={"mb-3"}>
                             <Form>
                                 <Form.Group className="mb-3" controlId="formBasicId">
                                     <Col className={"offset-1 col-10"}>
-                                    <Form.Control type="email" placeholder="아이디를 입력하세요" />
+                                    <Form.Control type="userid" placeholder="아이디를 입력하세요" />
                                     </Col>
                                 </Form.Group>
 
@@ -25,26 +27,37 @@ export default function Login () {
                                     <Form.Control type="password" placeholder="비밀번호" />
                                     </Col>
                                 </Form.Group>
+
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Row>
-                                        <Col xs={{span: 5, offset: 1}}>
-                                            <Form.Check type="checkbox" label="아이디 기억하기" />
-                                        </Col>
-                                        <Col xs={5} className={"text-end"}>
-                                            <NavLink to="#">아이디/비밀번호 찾기</NavLink>
-                                        </Col>
-                                    </Row>
+                                    <Col className={'offset-1 col-10'}>
+                                        <Row>
+                                            <Col className={'col-6 findInfo'}>
+                                                <Link to="#" className={'text-decoration-none text-dark'}>회원정보 찾기</Link>
+                                            </Col>
+                                            <Col>
+                                                <Form.Check type="checkbox" label="아이디 기억하기" />
+                                            </Col>
+                                        </Row>
+                                    </Col>
                                 </Form.Group>
+
+                                <Col className={'toJoin mb-3 offset-1 col-10'}>
+                                    <Link to="/join" className={'text-decoration-none text-dark'}>회원가입</Link>
+                                </Col>
+
                                 <Col className={"offset-1 col-10"}>
-                                <Button className={"loginbtn"} variant="secondary" type="submit">
+                                <Button className={"loginbtn"} variant="secondary" type="submit"
+                                href={'/'}>
                                     로그인
                                 </Button>
                                 </Col>
+
                                 <Col className={"offset-1 col-10 mt-2"}>
                                     <div className="kakaoLogin">
                                         <Image src={kakao} className={"kakaoImg"}/>
                                     </div>
                                 </Col>
+
                             </Form>
                         </Row>
                     </div>
@@ -52,6 +65,6 @@ export default function Login () {
                 </Col>
             </Row>
         </div>
-        </div>
+        </Container>
     );
 }

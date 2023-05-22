@@ -9,6 +9,7 @@ import MyInfo from "./pages/admin/pages/MyInfo";
 import Login from "./pages/front/pages/Login";
 import Modify from "./pages/myinfo/pages/Modify";
 import ClassMain from "./pages/front/pages/ClassMain";
+import ViewClass from "./pages/front/pages/ViewClass";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
     children: [
       {index:"main", element: <ClassMain />},
       {path: "login", element: <Login />},
-      {path: "join", element: <Join />}
+      {path: "join", element: <Join />},
+      {path: "viewclass", element: <ViewClass />}
     ]
   },
   {
