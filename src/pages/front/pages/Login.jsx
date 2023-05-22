@@ -9,7 +9,7 @@ export default function Login () {
         <div className="container text-center">
           <div className="loginMain">
             <Row>
-                <Col className={"offset-4 col-4 pt-4 LoginContainer"}>
+                <Col className={"offset-xl-4 col-xl-4 pt-4 LoginContainer"}>
                     <h2 className={"text-center mb-xl-5 loginLogo"}>양조장</h2>
                     <div id="joinForm" className="ps-3">
                         <Row className={"mb-3"}>

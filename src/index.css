@@ -33,6 +33,21 @@
     --color-white: #fff;
     --color-border: rgba(0,0,0,0.25);
     --color-hamberger: #333;
+
+    /* 브랜드 컬러(대표 색): 김충일 */
+    --color-brand:#18298c;
+    /* 정보를 나타낼때 사용할 글씨 굵기: 김충일
+     ex: 인풋태그의 라벨*/
+    --font-weight-info: 500;
+
+    /* 컬러 팔레트 1: 김충일 */
+    --color1-primary: #18298c;
+    --color1-secondary: #f27781;
+    --color1-success: #04bf8a;
+    --color1-warning: #f2cf1d;
+    --color1-info: #f29f05;
+
+
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;

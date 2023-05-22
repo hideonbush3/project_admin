@@ -7,20 +7,17 @@ import Home from "./pages/admin/pages/Home";
 import Join from "./pages/front/pages/Join";
 import MyInfo from "./pages/admin/pages/MyInfo";
 import Login from "./pages/front/pages/Login";
+import Modify from "./pages/myinfo/pages/Modify";
+import ClassMain from "./pages/front/pages/ClassMain";
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<Index />,
     children: [
+      {index:"main", element: <ClassMain />},
+      {path: "login", element: <Login />},
       {path: "join", element: <Join />}
-    ]
-  },
-  {
-    path:'/',
-    element:<Index />,
-    children: [
-      {path: "login", element: <Login />}
     ]
   },
   {
@@ -28,13 +25,15 @@ const router = createBrowserRouter([
     element:<Admin />,
     children: [
       {index: true, element: <Home />},
-      {path: "myinfo", element: <MyInfo />},
+      {path: "myinfo", element: <MyInfo />}
     ]
   },
   {
     path:'/myinfo',
     element:<UserInfo />,
-    children: []
+    children: [
+      {path: "modify", element: <Modify />}
+    ]
   }
 ]);
 
